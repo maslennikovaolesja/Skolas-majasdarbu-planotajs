@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skolas mājasdarbu plānotājs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Skolas mājasdarbu plānotājs</h1>
+
+        <div class="form">
+            <input type="text" id="subject" placeholder="Priekšmets">
+
+            <input type="text" id="task" placeholder="Mājasdarba apraksts">
+
+            <input type="date" id="deadline">
+
+            <button onclick="addTask()">Pievienot</button>
+        </div>
+
+        <h2>Mājasdarbu saraksts</h2>
+<input
+    type="text"
+    id="filterSubject"
+    placeholder="Filtrēt pēc priekšmeta"
+    onkeyup="showTasks()">
+
+<button onclick="showTodayTasks()">Šodienas uzdevumi</button>
+<button onclick="showTasks()">Rādīt visus</button>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
